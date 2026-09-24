@@ -1,0 +1,19 @@
+[[repos]]
+repo = "builtin"
+hooks = [
+    { id = "trailing-whitespace" },
+    { id = "end-of-file-fixer" },
+    { id = "check-yaml" },
+    { id = "check-toml" },
+    { id = "mixed-line-ending" },
+]
+
+[[repos]]
+repo = "https://github.com/astral-sh/ruff-pre-commit"
+rev = "v0.15.0"
+hooks = [{ id = "ruff-check", args = ["--fix"] }, { id = "ruff-format" }]
+
+[[repos]]
+repo = "https://github.com/jsh9/pydoclint"
+rev = "0.8.6"
+hooks = [{ id = "pydoclint", args = ["src"] }]
