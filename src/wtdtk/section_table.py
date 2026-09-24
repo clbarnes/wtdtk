@@ -1,4 +1,5 @@
 """Utilities for parsing CSV files with details about sections."""
+
 from __future__ import annotations
 
 import csv
