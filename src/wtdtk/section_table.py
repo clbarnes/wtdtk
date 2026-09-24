@@ -59,8 +59,6 @@ def read_sections_csv(lines: Iterable[str]) -> Iterable[SectionDetails]:
         Lines of a csv,
         e.g. the result of `open("path/to/details.csv", newline="")`,
         or `details_csv_str.splitlines()`.
-    fpath:
-        If given, log messages are slightly more informative.
 
     Yields
     ------
